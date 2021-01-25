@@ -3,7 +3,7 @@ zuul:
   ignoredServices: "*"
   routes:
     client01-service:
-      path: /s01/**
+      path: /rest/s01/**
 # serviceId as registed with Eureka. Enabled and used when ribbon.eureka.enabled is true.
       serviceId: client-service-01
 # zuul.routes.<the route>.url used when ribbon.eureka.enabled is false, serviceId is disabled.
